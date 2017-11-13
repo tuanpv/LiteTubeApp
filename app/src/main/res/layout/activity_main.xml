@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.youtubelite.floattube.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_above="@+id/list_grid_ll_ad"/>
+
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:id="@+id/list_grid_ll_ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+</RelativeLayout>
